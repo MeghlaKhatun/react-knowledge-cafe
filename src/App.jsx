@@ -1,6 +1,7 @@
 
 import './App.css'
 import Blogs from './Components/Blogs/Blogs'
+import Bookmarks from './Components/Bookmarks/Bookmarks'
 import Header from './Components/Header/Header'
 
 function App() {
@@ -10,7 +11,10 @@ function App() {
     <>
      
      <Header></Header>
+     <div className='max-w-screen-xl mx-auto md:flex'>
      <Blogs></Blogs>
+     <Bookmarks></Bookmarks>
+     </div>
      
     </>
   )
