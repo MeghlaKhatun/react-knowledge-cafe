@@ -5,7 +5,7 @@ import { FaBookmark } from 'react-icons/fa';
 const Blog = ({blog,handleBookmark,handleMarksRead}) => {
     const {id,title,cover,author,author_img,reading_time,posted_date,hashtags}=blog
     return (
-        <div className='mt-8'>
+        <div className='mt-8 mb-[78px]'>
             <img className='w-full' src={cover}></img>
 
         <div className='flex justify-between mt-8'>
