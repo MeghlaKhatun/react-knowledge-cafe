@@ -17,7 +17,7 @@ const Blogs = ({handleBookmark,handleMarksRead}) => {
 
     return (
         <div className="w-2/3 text-4xl">
-            <h2>Blogs: {blogs.length} </h2>
+            
             {
                 blogs.map(blog=> <Blog key={blog.id}
                      blog={blog}
