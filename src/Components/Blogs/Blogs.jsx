@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import PropTypes from 'prop-types';
 import Blog from "../Blog/Blog";
 
 
@@ -25,5 +26,9 @@ const Blogs = ({handleBookmark}) => {
         </div>
     );
 };
+
+Blogs.propTypes={
+    handleBookmark:PropTypes.func
+}
 
 export default Blogs;

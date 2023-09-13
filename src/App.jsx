@@ -7,8 +7,9 @@ import Header from './Components/Header/Header'
 
 function App() {
   const [bookmark,setBookmark]=useState([])
-  const handleBookmark=(bookmark)=>{
-    console.log('bookmark adding soon')
+  const handleBookmark=(blog)=>{
+   const newBookmarks=[...bookmark,blog]
+   setBookmark(newBookmarks)
   }
   
 
@@ -16,9 +17,9 @@ function App() {
     <>
      
      <Header></Header>
-     <div className='max-w-screen-xl mx-auto md:flex'>
+     <div className='max-w-screen-xl mx-auto gap-6 md:flex'>
      <Blogs handleBookmark={handleBookmark}></Blogs>
-     <Bookmarks></Bookmarks>
+     <Bookmarks bookmark={bookmark}></Bookmarks>
      </div>
      
     </>
